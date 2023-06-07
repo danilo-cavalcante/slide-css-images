@@ -1,0 +1,1005 @@
+.image {
+    height: 300px;
+    width: 300px;
+    background-image: linear-gradient(#000040, #0000a2, #0000ed, white, #dd8d40);
+    position: relative;
+}
+
+.moon {
+    height: 40px;
+    width: 40px;
+    background-color: #ffffef;
+    border-radius: 50%;
+    box-shadow: 0 0 20px white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.image .moon {
+    top: 20px;
+}
+
+.crateras {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.cratera {
+    border-radius: 50%;
+}
+
+.cratera1 {
+    height: 5px;
+    width: 5px;
+    background-color: #ddd;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    border-radius: 30px;
+    box-shadow: -1px 0 1px #ccc;
+}
+
+.cratera2 {
+    height: 8px;
+    width: 8px;
+    background-color: #ddd;
+    position: absolute;
+    top: 12%;
+    right: 15%;
+    box-shadow: -1px 0 1px #ccc;
+}
+
+.cratera3 {
+    height: 12px;
+    width: 12px;
+    background-color: #eed;
+    position: absolute;
+    bottom: 8%;
+    right: 15%;
+    box-shadow: 1px -1px 1px #eee;
+}
+
+.cratera4 {
+    height: 15px;
+    width: 15px;
+    background-color: #eed;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translateX(-50%);
+}
+
+.image1 {
+    position: relative;
+    background-image: radial-gradient(#fff, #006, #005, #004, #003);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img {
+    height: 300px;
+    width: 300px;
+    /*margin: 50px;*/
+    overflow: hidden;
+}
+
+.image2 {
+    background-color: skyblue;
+    position: relative;
+}
+
+.person {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: grid;
+    justify-items: center;
+    transform: translate(-50%);
+    z-index: 9;
+}
+
+.person .head {
+    height: 15px;
+    width: 10px;
+    background-color: #000;
+    border-radius: 40% 40% 45% 45%;
+}
+
+.person .sup {
+    display: flex;
+}
+
+.person .arm {
+    height: 32px;
+    width: 5px;
+    background-color: #000;
+    margin: 2px;
+}
+
+.person .left-arm {
+    border-radius: 50% 0 0 0;
+    transform: rotate(10deg);
+}
+
+.person .right-arm {
+    border-radius: 0 50% 0 0;
+    transform: rotate(-10deg);
+}
+
+.person .back {
+    height: 30px;
+    width: 15px;
+    background-color: #000;
+    border-radius: 5px 5px 0 0;
+}
+
+.person .inf {
+    display: flex;
+}
+
+.person .leg {
+    height: 40px;
+    width: 7px;
+    background-color: #000;
+}
+
+.person .left-leg {
+    transform: rotate(3deg);
+}
+
+.person .right-leg {
+    transform: rotate(-3deg);
+}
+
+.sun {
+    height: 70px;
+    width: 70px;
+    background-color: #ffe;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    box-shadow: 0 0 100px #ff0;
+}
+
+.ground {
+    height: 50px;
+    width: 100%;
+    background-color: sandybrown;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.ground .sea {
+    background-image: linear-gradient(#00a, #05a, #36a, #46a, #46b, #46c, #fff);
+    border-radius: 0 0 50% 50%;
+    height: 30px;
+    box-shadow: 0 1px 3px #ddd;
+}
+
+.image3 {
+    position: relative;
+    background-color: #67a;
+}
+
+.image3 .ground-forrest {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    background-color: #260;
+    bottom: 0;
+}
+
+.ground-forrest .road {
+    position: absolute;
+    bottom: 0;
+    background-color: darkgoldenrod;
+    height: 230px;
+    width: 270px;
+    border-radius: 0 100% 0 0;
+}
+
+.road .ground-two {
+    position: absolute;
+    bottom: 0;
+    background-color: #260;
+    height: 210px;
+    width: 150px;
+    border-radius: 0 100% 0 0;
+}
+
+.tree .tronco {
+    background-image: linear-gradient(to right, #321, #110);
+    position: absolute;
+    border-radius: 0 0 3px 3px;
+    z-index: 8;
+}
+
+.tree.tree-one .tronco {
+    height: 220px;
+    width: 10px;
+    bottom: 12px;
+    left: 5px;
+}
+
+.tree-shadow {
+    background-color: rgba(0, 0, 0, .5);
+    transform: rotate(3deg);
+    position: absolute;
+    border-radius: 0 0 0 5px;
+    z-index: 1;
+    width: 300px;
+}
+
+.tree.tree-one .tree-shadow {
+    bottom: 5px;
+    left: 5px;
+    height: 10px;
+}
+
+.tree.tree-two .tronco {
+    height: 240px;
+    width: 20px;
+    bottom: -3px;
+    left: 100px;
+}
+
+.tree.tree-three .tronco {
+    height: 230px;
+    width: 12px;
+    bottom: 50px;
+    left: 80px;
+}
+
+.tree.tree-three .tree-shadow {
+    height: 12px;
+    bottom: 43px;
+    left: 80px;
+}
+
+.tree.tree-four .tronco {
+    height: 220px;
+    width: 8px;
+    bottom: 80px;
+    left: 70px;
+}
+
+.tree.tree-four .tree-shadow {
+    height: 8px;
+    bottom: 73px;
+    left: 70px;
+}
+
+.tree.tree-five .tronco {
+    height: 240px;
+    width: 10px;
+    bottom: 50px;
+    left: 40px;
+}
+
+.tree.tree-five .tree-shadow {
+    height: 10px;
+    bottom: 43px;
+    left: 40px;
+}
+
+.lake {
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    transform: rotateX(65deg);
+}
+
+.lake .lake-main {
+    height: 80px;
+    width: 100px;
+    background-color: #aaccff;
+    border-radius: 40% 50% 50%;
+}
+
+.lake-parts {
+    position: relative;
+}
+
+.lake-parts .lake-part-one {
+    height: 50px;
+    width: 40px;
+    background-color: #aaccff;
+    border-radius: 50% 0 0 50%;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+}
+
+.lake-parts .lake-part-two {
+    height: 50px;
+    width: 80px;
+    background-color: #aaccff;
+    border-radius: 0 0 50% 50%;
+    position: absolute;
+    bottom: -8px;
+    right: 15px;
+}
+
+.image4 {
+    background-color: #ffdaff;
+    display: grid;
+    place-items: center;
+}
+
+.image4 .circle {
+    height: 290px;
+    width: 290px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.image4 .road-ground {
+    height: 145px;
+    width: 300px;
+    background-image: radial-gradient(circle at 100% 100%, rgba(10, 10, 10, .6), #ffdaff, #111);
+    position: absolute;
+    bottom: 0;
+    left: -2px;
+    border-top: 1px solid #000;
+    overflow: hidden;
+}
+
+.image4 .road-ground .road-main {
+    height: 138px;
+    width: 250px;
+    background-color: #ffdaff;
+    background-image: linear-gradient(to right, #ffdaff 30%, #ffdaff, #ffdaff, rgba(150, 150, 100, .2), rgba(200, 200, 150, .2), rgba(150, 150, 100, .2), #ffdaff);
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 80% 0 0;
+    z-index: 2;
+    box-shadow: 0 0 80px #000;
+}
+
+.image4 .road-ground .ground-left {
+    height: 130px;
+    width: 150px;
+    background-image: radial-gradient(circle at 0% 100%, rgba(10, 10, 10, .6), #ffdaff, #111);
+    z-index: 5;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 100% 80% 0;
+    transform: rotateY(15deg);
+    box-shadow: 0 0 2px #000;
+}
+
+.image4 .tree .bole {
+    background-color: #110;
+    position: absolute;
+    z-index: 99;
+    border-bottom: 2px solid rgba(0, 0, 0, .1);
+    border-radius: 0 0 2px 2px;
+}
+
+.branch-position {
+    position: absolute;
+}
+
+.bole-top {
+    height: 35px;
+    width: 15px;
+    position: absolute;
+    background-color: #110;
+    top: -20px;
+    left: 0;
+    transform: rotate(45deg);
+    border-radius: 0 100% 0 5px;
+}
+
+.bole-last-top {
+    height: 20px;
+    width: 10px;
+    background-color: #110;
+    position: absolute;
+    transform: rotate(-80deg);
+    border-radius: 100% 0 10px 0;
+    right: 10px;
+    top: -5px;
+}
+
+.branches {
+    position: relative;
+    height: 150px;
+    width: 15px;
+    z-index: 999;
+}
+
+.b {
+    background-color: #110;
+    position: absolute;
+}
+
+.branch-one-left {
+    height: 80px;
+    width: 10px;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 0;
+    right: 25px;
+    border-radius: 100% 0 10px 0;
+}
+
+.branch1 {
+    height: 30px;
+    width: 6px;
+    transform: rotate(-45deg);
+    right: 10px;
+    bottom: 40px;
+    border-radius: 100% 0 6px 0;
+}
+
+.branch2 {
+    height: 35px;
+    width: 5px;
+    transform: rotate(40deg);
+    left: 15px;
+    bottom: 30px;
+    border-radius: 30px 0 0 0;
+}
+
+.branch3 {
+    height: 20px;
+    width: 5px;
+    transform: rotate(-45deg);
+    right: 10px;
+    bottom: 25px;
+    border-radius: 0 30px 0 0;
+}
+
+.branch4 {
+    height: 20px;
+    width: 5px;
+    transform: rotate(-50deg);
+    right: 10px;
+    bottom: 10px;
+    border-radius: 0 30px 0 0;
+}
+
+.branch-two-left {
+    height: 40px;
+    width: 6px;
+    top: 60px;
+    right: 25px;
+    transform: rotate(-75deg);
+    border-radius: 100% 0 6px 0;
+}
+
+.branch2-1 {
+    height: 20px;
+    width: 6px;
+    bottom: 5px;
+    transform: rotate(-30deg);
+    right: 5px;
+    border-radius: 100% 0 6px 0;
+}
+
+.branch-one-right {
+    height: 70px;
+    width: 8px;
+    left: 20px;
+    border-radius: 0 100% 0 8px;
+    transform: rotate(45deg);
+}
+
+.branch-up1 {
+    height: 15px;
+    width: 5px;
+    transform: rotate(-45deg);
+    top: 20px;
+    right: 8px;
+    border-radius: 50% 0 0 0;
+}
+
+.branch-up-final {
+    height: 15px;
+    width: 5px;
+    top: -10px;
+    left: 5px;
+    transform: rotate(45deg);
+    border-radius: 0 5px 0 2px;
+}
+
+.branch-down {
+    height: 15px;
+    width: 5px;
+    top: 10px;
+    left: 5px;
+    transform: rotate(45deg);
+    border-radius: 0 100% 0 5px;
+}
+
+.branch-two-right {
+    height: 30px;
+    width: 4px;
+    border-radius: 0 100% 0 4px;
+    top: 55px;
+    transform: rotate(45deg);
+    left: 18px;
+}
+
+.shadow {
+    position: absolute;
+    z-index: 9;
+    transform: rotate(5deg);
+    border-radius: 0 0 0 3px;
+    background-color: rgba(0, 0, 0, .3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+.distant-shadow {
+    position: absolute;
+    z-index: 9;
+    transform: rotate(5deg);
+    border-radius: 0 100% 100% 3px;
+    background-color: rgba(0, 0, 0, .1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+}
+
+.tree.tree-1 .bole,
+.tree.tree-1 .branch-position {
+    height: 100%;
+    width: 15px;
+    left: 65px;
+    bottom: 25px;
+}
+
+.tree-1 .shadow {
+    height: 14px;
+    width: 100%;
+    left: 65px;
+    top: 263px;
+}
+
+.tree.tree-2 .bole,
+.tree.tree-2 .branch-position {
+    height: 150px;
+    width: 8px;
+    left: 95px;
+    bottom: 80px;
+}
+
+.tree-2 .shadow {
+    height: 7px;
+    width: 250px;
+    bottom: 68px;
+    left: 95px;
+}
+
+.tree-2 .bole-top {
+    transform: rotate(45deg) scale(0.5);
+}
+
+.tree-2 .branches {
+    top: -40px;
+    transform: scale(.8);
+}
+
+.tree-2 .branches .branch-one-left {
+    top: 0;
+    right: 30px;
+}
+
+.tree-2 .branches .branch-two-right {
+    left: 10px;
+}
+
+.tree.tree-3 .bole,
+.tree.tree-3 .branch-position {
+    height: 120px;
+    width: 8px;
+    left: 115px;
+    bottom: 90px;
+}
+
+.tree-3 .shadow {
+    height: 7px;
+    width: 250px;
+    bottom: 78px;
+    left: 115px;
+}
+
+.tree-3 .bole-top {
+    transform: rotate(45deg) scale(0.5);
+}
+
+.tree-3 .branches {
+    transform: scale(.7);
+}
+
+.tree-3 .branches .branch-one-left {
+    top: -40px;
+    right: 30px;
+}
+
+.tree-3 .branches .branch-two-left {
+    top: 20px;
+}
+
+.tree-3 .branches .branch-one-right {
+    top: -20px;
+}
+
+.tree-3 .branches .branch-two-right {
+    left: 10px;
+}
+
+.tree.tree-4 .bole,
+.tree.tree-4 .branch-position {
+    height: 30px;
+    width: 5px;
+    left: 155px;
+    bottom: 125px;
+}
+
+.tree-4 .distant-shadow {
+    height: 3px;
+    width: 50px;
+    left: 155px;
+    bottom: 122px
+}
+
+.tree-4 .bole-top {
+    left: -2px;
+    transform: rotate(45deg) scale(0.3);
+}
+
+.tree-4 .branches {
+    top: -55px;
+    left: -5px;
+    transform: scale(.28);
+}
+
+.tree-4 .branches .branch-one-left {
+    top: -40px;
+    right: 30px;
+}
+
+.tree-4 .branches .branch-two-left {
+    top: 20px;
+}
+
+.tree-4 .branches .branch-one-right {
+    top: -20px;
+}
+
+.tree-4 .branches .branch-two-right {
+    left: 16px;
+}
+
+.tree.tree-5 .bole,
+.tree.tree-5 .branch-position {
+    height: 25px;
+    width: 5px;
+    left: 170px;
+    bottom: 130px;
+}
+
+.tree-5 .distant-shadow {
+    height: 3px;
+    width: 50px;
+    left: 170px;
+    bottom: 128px
+}
+
+.tree-5 .bole-top {
+    left: -2px;
+    transform: rotate(45deg) scale(0.3);
+}
+
+.tree-5 .branches {
+    top: -70px;
+    left: -5px;
+    transform: scale(.25);
+}
+
+.tree.tree-6 .bole,
+.tree.tree-6 .branch-position {
+    height: 20px;
+    width: 4px;
+    left: 180px;
+    bottom: 135px;
+}
+
+.tree-6 .distant-shadow {
+    height: 2px;
+    width: 50px;
+    left: 180px;
+    bottom: 132px;
+}
+
+.tree-6 .bole-top {
+    left: -2px;
+    transform: rotate(45deg) scale(0.3);
+}
+
+.tree-6 .branches {
+    top: -68px;
+    left: -5px;
+    transform: scale(.25);
+}
+
+.tree.tree-7 .bole,
+.tree.tree-7 .branch-position {
+    height: 15px;
+    width: 4px;
+    left: 188px;
+    bottom: 140px;
+}
+
+.tree-7 .distant-shadow {
+    height: 2px;
+    width: 50px;
+    left: 188px;
+    bottom: 137px;
+    opacity: 0.7;
+}
+
+.tree-7 .bole-top {
+    left: -2px;
+    transform: rotate(45deg) scale(0.3);
+}
+
+.tree-7 .branches {
+    top: -72px;
+    left: -5px;
+    transform: scale(.18);
+}
+
+.tree.tree-8 .bole,
+.tree.tree-8 .branch-position {
+    height: 12px;
+    width: 3px;
+    left: 195px;
+    bottom: 142px;
+}
+
+.tree-8 .bole-top {
+    top: -18px;
+    left: -4px;
+    transform: rotate(45deg) scale(0.2);
+}
+
+.tree-8 .branches {
+    top: -72px;
+    left: -5px;
+    transform: scale(.18);
+}
+
+.tree.tree-9 .bole,
+.tree.tree-9 .branch-position {
+    height: 12px;
+    width: 3px;
+    left: 205px;
+    bottom: 142px;
+}
+
+.tree-9 .bole-top {
+    top: -18px;
+    left: -5px;
+    transform: rotate(45deg) scale(0.2);
+}
+
+.tree-9 .branches {
+    top: -72px;
+    left: -5px;
+    transform: scale(.14);
+}
+
+/*right side*/
+.tree.tree-10 .bole,
+.tree.tree-10 .branch-position {
+    height: 100%;
+    width: 12px;
+    right: 20px;
+    transform: rotate(-3deg);
+}
+/*10 tá ok*/
+.tree.tree-11 .bole,
+.tree.tree-11 .branch-position {
+    height: 80px;
+    width: 8px;
+    right: 40px;
+    bottom: 105px;
+    transform: rotate(-2deg);
+}
+
+.tree-11 .shadow {
+    height: 5px;
+    width: 80px;
+    bottom: 101px;
+    right: -34px;
+}
+
+.tree-11 .bole-top {
+    transform: rotate(45deg) scale(0.45);
+}
+
+.tree-11 .branches {
+    top: -40px;
+    left: -3px;
+    transform: scale(.7);
+}
+
+.tree.tree-12 .bole,
+.tree.tree-12 .branch-position {
+    height: 65px;
+    width: 6px;
+    right: 55px;
+    bottom: 115px;
+}
+
+.tree-12 .shadow {
+    height: 3px;
+    width: 65px;
+    bottom: 112px;
+    right: -4px;
+}
+
+.tree-12 .bole-top {
+    /*top: -18px;*/
+    left: -2px;
+    transform: rotate(45deg) scale(0.35);
+}
+
+.tree-12 .branches {
+    top: -50px;
+    left: -5px;
+    transform: scale(.58);
+}
+
+.tree.tree-13 .bole,
+.tree.tree-13 .branch-position {
+    height: 40px;
+    width: 4px;
+    right: 65px;
+    bottom: 125px;
+}
+
+.tree-13 .distant-shadow {
+    height: 3px;
+    width: 70px;
+    right: 0;
+    bottom: 122px
+}
+
+.tree-13 .bole-top {
+    top: -18px;
+    left: -4px;
+    transform: rotate(45deg) scale(0.25);
+}
+
+.tree-13 .branches {
+    top: -60px;
+    left: -5px;
+    transform: scale(.4);
+}
+
+.tree.tree-14 .bole,
+.tree.tree-14 .branch-position {
+    height: 30px;
+    width: 2px;
+    right: 51px;
+    bottom: 143px;
+    transform: rotate(-2deg);
+}
+
+.tree-14 .bole-top {
+    top: -18px;
+    left: -5px;
+    transform: rotate(45deg) scale(0.12);
+}
+
+.tree-14 .branches {
+    top: -60px;
+    left: -7px;
+    transform: scale(.18);
+}
+
+.tree.tree-15 .bole,
+.tree.tree-15 .branch-position {
+    height: 35px;
+    width: 2px;
+    right: 36px;
+    bottom: 132px;
+    transform: rotate(-2deg);
+}
+
+.tree-15 .bole-top {
+    top: -18px;
+    left: -6px;
+    transform: rotate(45deg) scale(0.1);
+}
+
+.tree-15 .branches {
+    top: -65px;
+    left: -7px;
+    transform: scale(.18);
+}
+
+.tree.tree-16 .bole,
+.tree.tree-16 .branch-position {
+    height: 30px;
+    width: 3px;
+    right: 14px;
+    bottom: 126px;
+}
+
+.tree-16 .distant-shadow {
+    height: 2px;
+    width: 50px;
+    right: -34px;
+    bottom: 123px
+}
+
+.tree-16 .bole-top {
+    top: -18px;
+    left: -5px;
+    transform: rotate(45deg) scale(0.15);
+}
+
+.tree-16 .branches {
+    top: -65px;
+    left: -6px;
+    transform: scale(.18);
+}
+
+.tree.tree-17 .bole,
+.tree.tree-17 .branch-position {
+    height: 30px;
+    width: 3px;
+    right: 8px;
+    bottom: 130px;
+}
+
+.tree-17 .distant-shadow {
+    height: 2px;
+    width: 50px;
+    right: -40px;
+    bottom: 128px;
+    opacity: 0.6;
+}
+
+.tree-17 .bole-top {
+    top: -18px;
+    left: -5px;
+    transform: rotate(45deg) scale(0.15);
+}
+
+.tree-17 .branches {
+    top: -65px;
+    left: -6px;
+    transform: scale(.18);
+}
+
+.tree.tree-18 .bole,
+.tree.tree-18 .branch-position {
+    height: 30px;
+    width: 3px;
+    right: 1px;
+    bottom: 130px;
+}
+
+.tree-18 .bole-top {
+    top: -18px;
+    left: -5px;
+    transform: rotate(45deg) scale(0.15);
+}
+
+.tree-18 .branches {
+    top: -65px;
+    left: -6px;
+    transform: scale(.18);
+}

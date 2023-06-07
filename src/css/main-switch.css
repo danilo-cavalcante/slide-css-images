@@ -1,0 +1,8 @@
+.images-slider .slide {
+    display: none;
+    transition: .3s;
+}
+
+.images-slider .slide.mostrar {
+    display: block;
+}

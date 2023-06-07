@@ -1,0 +1,42 @@
+body {
+    background-color: #88e;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.images-slider {
+    height: 320px;
+    width: 320px;
+    border: 10px solid #ada;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.seta-voltar, .seta-avancar {
+    position: absolute;
+    font-size: 50px;
+    font-weight: 900;
+    bottom: 130px;;
+}
+
+.seta-voltar {
+    transform: translate(-50%);
+    color: blue;
+    left: -30px;
+}
+
+.seta-avancar {
+    transform: rotateY(180deg) translate(-50%);
+    color: red;
+    right: -30px;
+}
+.opacidade {
+    opacity: 0.4;
+    cursor: default;
+}

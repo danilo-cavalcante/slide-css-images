@@ -1,0 +1,9 @@
+.images-slider .slide {
+    opacity: 0;
+    transition: .5s;
+    position: absolute;
+}
+
+.images-slider .slide.mostrar {
+    opacity: 1;
+}
