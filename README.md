@@ -9,3 +9,4 @@ Slide de imagens criadas com css
 
 - HTML
 - CSS
+- JavaScript
